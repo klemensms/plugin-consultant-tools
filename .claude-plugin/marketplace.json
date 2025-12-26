@@ -1,0 +1,19 @@
+{
+  "name": "consultant-tools",
+  "owner": {
+    "name": "Dynamics CRM Consultants"
+  },
+  "metadata": {
+    "description": "Shared plugin collection for Dynamics CRM consultants",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "consultant-tools",
+      "source": "./plugins/consultant-tools",
+      "description": "Core tools, skills, and MCP servers for CRM consulting work",
+      "version": "1.0.0"
+    }
+  ]
+}
