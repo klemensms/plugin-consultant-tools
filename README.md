@@ -44,6 +44,23 @@ Then restart Claude Code or start a new session.
 |----------------------|------------------------------------|
 | `example-filesystem` | Filesystem access (placeholder)    |
 
+### Hooks
+
+The plugin includes auto-approval hooks for common CRM consulting workflows:
+
+| Hook                       | What it does                                                          |
+|----------------------------|-----------------------------------------------------------------------|
+| `auto-approve-mcp.py`      | Auto-approves Azure DevOps, Power Platform, and Figma MCP tools       |
+| `auto-approve-readonly.py` | Auto-approves safe read-only Bash commands (ls, cat, grep, etc.)      |
+
+**MCP patterns auto-approved:**
+- `mcp__.*azure-devops.*` - Azure DevOps work items, wikis, pipelines
+- `mcp__powerplatform-readonly-.*` - Power Platform read-only operations
+- `mcp__figma.*` - Figma design tools
+
+**Optional (macOS only):**
+Audio notification scripts are included but not active by default. See `scripts/` folder for `play-audio.py` and `audio-then-prompt.sh`. To enable, add them to your project's hooks configuration.
+
 ## Adding New Skills
 
 1. Create a folder under `plugins/consultant-tools/skills/`
@@ -70,6 +87,7 @@ Instructions for Claude to follow...
 
 | Version | Date       | Changes                                                              |
 |---------|------------|----------------------------------------------------------------------|
+| 1.3.0   | 2025-12-26 | Added auto-approval hooks for MCP tools and read-only Bash commands  |
 | 1.2.0   | 2025-12-26 | Added ado-user-stories, ado-wiki, crm-best-practices, secret-guard   |
 | 1.1.0   | 2025-12-26 | Added markdown-docs skill                                            |
 | 1.0.0   | 2025-12-26 | Initial release with plugin structure                                |

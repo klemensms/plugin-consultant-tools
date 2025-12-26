@@ -1,0 +1,35 @@
+{
+  "description": "Auto-approval hooks for CRM consulting workflows",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__.*azure-devops.*",
+        "hooks": [{
+          "type": "command",
+          "command": "${CLAUDE_PLUGIN_ROOT}/scripts/auto-approve-mcp.py"
+        }]
+      },
+      {
+        "matcher": "mcp__powerplatform-readonly-.*__.*",
+        "hooks": [{
+          "type": "command",
+          "command": "${CLAUDE_PLUGIN_ROOT}/scripts/auto-approve-mcp.py"
+        }]
+      },
+      {
+        "matcher": "mcp__figma.*",
+        "hooks": [{
+          "type": "command",
+          "command": "${CLAUDE_PLUGIN_ROOT}/scripts/auto-approve-mcp.py"
+        }]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [{
+          "type": "command",
+          "command": "${CLAUDE_PLUGIN_ROOT}/scripts/auto-approve-readonly.py"
+        }]
+      }
+    ]
+  }
+}
