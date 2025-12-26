@@ -87,6 +87,7 @@ Instructions for Claude to follow...
 
 | Version | Date       | Changes                                                              |
 |---------|------------|----------------------------------------------------------------------|
+| 1.3.1   | 2025-12-26 | Improved auto-approve-readonly security (regex, excluded find/cat)   |
 | 1.3.0   | 2025-12-26 | Added auto-approval hooks for MCP tools and read-only Bash commands  |
 | 1.2.0   | 2025-12-26 | Added ado-user-stories, ado-wiki, crm-best-practices, secret-guard   |
 | 1.1.0   | 2025-12-26 | Added markdown-docs skill                                            |
