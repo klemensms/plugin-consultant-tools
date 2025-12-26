@@ -30,9 +30,13 @@ Then restart Claude Code or start a new session.
 
 ### Skills
 
-| Skill                            | Description                                                              |
-|----------------------------------|--------------------------------------------------------------------------|
-| `consultant-tools:markdown-docs` | Enforces consistent structure and formatting for wiki/technical docs    |
+| Skill                                | Description                                                                    |
+|--------------------------------------|--------------------------------------------------------------------------------|
+| `consultant-tools:markdown-docs`     | Enforces consistent structure and formatting for wiki/technical docs           |
+| `consultant-tools:ado-user-stories`  | Create/update Azure DevOps user stories with proper HTML and AC formatting     |
+| `consultant-tools:ado-wiki`          | Create/update ADO Wiki pages with consistent structure and API versioning      |
+| `consultant-tools:crm-best-practices`| Standards for Dynamics 365/CRM table naming, columns, and customization        |
+| `consultant-tools:secret-guard`      | Mandatory secret scanning before git commits to prevent credential exposure    |
 
 ### MCP Servers
 
@@ -64,7 +68,8 @@ Instructions for Claude to follow...
 
 ## Version History
 
-| Version | Date       | Changes                                      |
-|---------|------------|----------------------------------------------|
-| 1.1.0   | 2025-12-26 | Added markdown-docs skill                    |
-| 1.0.0   | 2025-12-26 | Initial release with plugin structure        |
+| Version | Date       | Changes                                                              |
+|---------|------------|----------------------------------------------------------------------|
+| 1.2.0   | 2025-12-26 | Added ado-user-stories, ado-wiki, crm-best-practices, secret-guard   |
+| 1.1.0   | 2025-12-26 | Added markdown-docs skill                                            |
+| 1.0.0   | 2025-12-26 | Initial release with plugin structure                                |
