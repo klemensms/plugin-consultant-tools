@@ -1,9 +1,6 @@
 ---
 name: sample-skill
-description: Example skill - replace with your actual skills
-triggers:
-  - sample
-  - example
+description: Use when testing plugin skills - demonstrates skill structure for consultant-tools plugin
 ---
 
 # Sample Skill
